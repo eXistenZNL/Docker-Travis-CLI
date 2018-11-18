@@ -11,6 +11,6 @@ script:
 
 after_success:
   - if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
-    docker login -u="existenz" -p="$DOCKER_PASSWORD"; docker push existenz/docker-travis-cli;
+    docker login -u="existenz" -p="$DOCKER_PASSWORD"; docker push existenz/travis-cli:latest;
     fi
 
