@@ -9,7 +9,7 @@ A small container so those of us who do not have Ruby installed locally, can sti
 
 Instead of running the `travis` command directly, run this container with your project mounted, like so:
 
-docker run --rm -t -v $(pwd):/workdir existenz/travis-cli:latest travis <command>
+`$ docker run --rm -t -v $(pwd):/workdir existenz/travis-cli:latest travis <command>`
 
 ## Bugs, questions, and improvements
 
